@@ -1,11 +1,11 @@
-# virtual environment
+# virtual env
 .venv/
 
-# python cache
+# python build/cache
 __pycache__/
 *.pyc
 
-# local data and models
+# local data/artifacts
 data/processed/
 data/models/
 logs/
