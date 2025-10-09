@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+matplotlib
+plotly
+scikit-learn
+torch           # or tensorflow
+optuna          # for Bayesian optimization (or scikit-optimize)
+streamlit
