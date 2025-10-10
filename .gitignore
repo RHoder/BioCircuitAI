@@ -1,14 +1,13 @@
-# virtual env
 .venv/
-
-# python build/cache
 __pycache__/
 *.pyc
 
-# local data/artifacts
-data/processed/
-data/models/
+data/processed/*.csv
+data/models/*
+data/opt/*
+data/multitarget/*
+data/dbtl/*
+data/control/*
 logs/
 
-# notebooks
 .ipynb_checkpoints/
