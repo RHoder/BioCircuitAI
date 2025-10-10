@@ -1,0 +1,5 @@
+ts,run_id,phase,status,artifacts,notes
+2025-10-10T00:30:43.942652,ebcc75fb,sweep,OK,"{""csv"": ""data/dbtl/ebcc75fb\\toggle_dataset.csv""}",grid sweep completed
+2025-10-10T00:31:19.192761,ebcc75fb,train,OK,"{""model"": ""data/dbtl/ebcc75fb\\surrogate.pt"", ""val_mse"": 157.735554}",training completed
+2025-10-10T00:31:19.933795,ebcc75fb,bo,OK,"{""bo_best"": ""data/dbtl/ebcc75fb\\bo_best.json"", ""hidden"": ""(128, 128)""}",bayesian optimization completed
+2025-10-10T00:31:20.099128,ebcc75fb,validate,OK,"{""trajectory"": ""data/dbtl/ebcc75fb\\true_trajectory.png"", ""result"": ""data/dbtl/ebcc75fb\\validate_result.json""}",validation completed
