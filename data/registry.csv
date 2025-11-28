@@ -3,3 +3,13 @@ ts,run_id,phase,status,artifacts,notes
 2025-10-10T00:31:19.192761,ebcc75fb,train,OK,"{""model"": ""data/dbtl/ebcc75fb\\surrogate.pt"", ""val_mse"": 157.735554}",training completed
 2025-10-10T00:31:19.933795,ebcc75fb,bo,OK,"{""bo_best"": ""data/dbtl/ebcc75fb\\bo_best.json"", ""hidden"": ""(128, 128)""}",bayesian optimization completed
 2025-10-10T00:31:20.099128,ebcc75fb,validate,OK,"{""trajectory"": ""data/dbtl/ebcc75fb\\true_trajectory.png"", ""result"": ""data/dbtl/ebcc75fb\\validate_result.json""}",validation completed
+2025-10-10T01:51:27.998995,03833b27,sweep,OK,"{""csv"": ""data/dbtl/03833b27\\toggle_dataset.csv""}",dataset ready
+2025-10-10T01:52:07.252094,03833b27,train,OK,"{""model"": ""data/dbtl/03833b27\\surrogate.pt"", ""scalers"": ""data/dbtl/03833b27\\scalers.joblib"", ""val_mse"": 0.015605}",training completed
+2025-10-10T01:52:07.968778,03833b27,bo:default,OK,"{""best_loss"": 11.036760330200195}",bayesian optimization completed
+2025-10-10T01:52:08.139465,03833b27,validate:default,OK,"{""true_A"": 11.86177495271639, ""true_B"": 0.03366137987759595}",validation completed
+2025-10-10T01:52:08.608830,03833b27,bo:flip,OK,"{""best_loss"": 1.260339379310608}",bayesian optimization completed
+2025-10-10T01:52:08.758772,03833b27,validate:flip,OK,"{""true_A"": 0.00014462933622516854, ""true_B"": 10.932194014063189}",validation completed
+2025-10-10T01:52:09.241643,03833b27,bo:highA,OK,"{""best_loss"": 14.475685119628906}",bayesian optimization completed
+2025-10-10T01:52:09.407958,03833b27,validate:highA,OK,"{""true_A"": 0.14669272125403213, ""true_B"": 18.953099374382134}",validation completed
+2025-10-10T01:52:09.892319,03833b27,bo:mid,OK,"{""best_loss"": 2.723907470703125}",bayesian optimization completed
+2025-10-10T01:52:10.041819,03833b27,validate:mid,OK,"{""true_A"": 13.582333840520258, ""true_B"": 0.03848940587971538}",validation completed
