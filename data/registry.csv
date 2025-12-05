@@ -13,3 +13,7 @@ ts,run_id,phase,status,artifacts,notes
 2025-10-10T01:52:09.407958,03833b27,validate:highA,OK,"{""true_A"": 0.14669272125403213, ""true_B"": 18.953099374382134}",validation completed
 2025-10-10T01:52:09.892319,03833b27,bo:mid,OK,"{""best_loss"": 2.723907470703125}",bayesian optimization completed
 2025-10-10T01:52:10.041819,03833b27,validate:mid,OK,"{""true_A"": 13.582333840520258, ""true_B"": 0.03848940587971538}",validation completed
+2025-12-05T03:36:29.265453,a5a2caf9,sweep,OK,"{""csv"": ""data/dbtl/a5a2caf9\\toggle_dataset.csv""}",dataset ready
+2025-12-05T03:37:38.709518,a5a2caf9,train,OK,"{""model"": ""data/dbtl/a5a2caf9\\surrogate.pt"", ""scalers"": ""data/dbtl/a5a2caf9\\scalers.joblib"", ""val_mse"": 0.015674}",training completed
+2025-12-05T03:37:41.809303,a5a2caf9,bo:default,OK,"{""best_loss"": 6.784648418426514}",bayesian optimization completed
+2025-12-05T03:37:42.002981,a5a2caf9,validate:default,OK,"{""true_A"": 8.945949263554214, ""true_B"": 0.03214489997276353}",validation completed

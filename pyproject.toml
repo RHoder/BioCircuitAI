@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biocircuitai"
+version = "0.0.0"
+description = "Surrogate-driven design of genetic circuits"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "optuna",
+    "torch",
+    "scikit-learn",
+    "joblib"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

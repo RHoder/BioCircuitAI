@@ -1,3 +1,18 @@
+Metadata-Version: 2.4
+Name: biocircuitai
+Version: 0.0.0
+Summary: Surrogate-driven design of genetic circuits
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: optuna
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+
 **BioCircuitAI**
 
 Surrogate-driven design of simple genetic circuits with simulation, learning, and optimization in one place. Run a full DBTL loop on a toggle switch in minutes; extend to your own models when ready.
@@ -11,12 +26,9 @@ Surrogate-driven design of simple genetic circuits with simulation, learning, an
 **Quick Start (local)**
 - Python 3.10+ recommended. Create an env and install deps:
   - `python -m venv .venv && .venv\Scripts\activate`
-  - `python -m pip install -r requirements.txt`
-  - `python -m pip install -e .`
-- Quick proof: sweep → train → multi-target BO → validate
-  - `python scripts/run_dbtl.py --workers 1 --epochs 10 --bs 512 --trials 20 --targets "10:8:default"`
-- Inspect results: `data/dbtl/<run_id>/summary.csv` (best params + validation) and per-target `true_trajectory.png` / `bo_convergence.png` under that run directory.
-- Full run (more thorough, slower):
+  - `pip install -r requirements.txt`
+  - `pip install -e .`  
+- Run the full DBTL loop (sweep → train → multi-target BO → validate):
   - `python scripts/run_dbtl.py --workers 1 --epochs 60 --bs 512 --trials 80 --targets "10:8:default"`
 - Minimal sanity tests (expects a dataset/model at default paths):
   - `pytest -q`
@@ -24,7 +36,7 @@ Surrogate-driven design of simple genetic circuits with simulation, learning, an
 **One-Liners by Stage**
 ```bash
 # Full loop with registry logging (Windows-safe; adjust workers as needed)
-python scripts/run_dbtl.py --workers 6 --trials 20 --targets "10:8:default,1:8:flip"
+python scripts/run_dbtl.py --workers 6 --trials 40 --targets "10:8:default,1:8:flip"
 
 # Generate dataset (toggle-switch grid sweep)
 python scripts/run_simulation.py --workers 1 --chunksize 1000 --out data/processed/toggle_dataset.csv
